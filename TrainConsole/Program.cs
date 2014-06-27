@@ -29,12 +29,20 @@ namespace TrainConsole
 
             // Display the file contents by using a foreach loop.
             System.Console.WriteLine("Contents of WriteLines2.txt = ");
+            String[] headers = lines[0].Split(',');
+            foreach (string header in headers)
+            {
+                Console.Write(header + "\t");
+            }
+            lines[0] = "";
             foreach (string line in lines)
             {
                 // Use a tab to indent each line of the file.
                 String[] var=line.Split(',');
-                Console.WriteLine("*2" + var[0]);
-                Console.WriteLine("\t:" + line);
+                foreach (string cell in var)
+                {
+                    Console.Write( cell + ":\t");
+                }
             }
 
             // Keep the console window open in debug mode.
