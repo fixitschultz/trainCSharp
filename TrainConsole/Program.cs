@@ -33,17 +33,14 @@ namespace TrainConsole
             {
                 // Use a tab to indent each line of the file.
                 String[] var=line.Split(',');
-                Console.WriteLine("*1" + var[0]);
+                Console.WriteLine("*2" + var[0]);
                 Console.WriteLine("\t:" + line);
             }
 
             // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
             System.Console.ReadKey();
-            Console.WriteLine("Hello World");
-      Console.WriteLine("Press any Key to Exit.");
-     Console.ReadLine();
-       
+                  
    }
 }
 // The following displays possible output from this example: 
